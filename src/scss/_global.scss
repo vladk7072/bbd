@@ -1,0 +1,53 @@
+html,
+body {
+  @extend %pro-400;
+  color: $text;
+  height: 100%;
+  a {
+    color: $text;
+  }
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.btn {
+  display: inline-block;
+  border: 2px solid #1eb53a;
+  border-radius: 8px;
+  padding: 8px 38px;
+  @extend %kan-700;
+  font-size: 20px;
+  line-height: 30px;
+  color: $accent;
+  background-color: transparent;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #ecf9ee;
+  }
+  &-sec {
+    border: 2px solid #fb5607;
+    color: $btn-sec;
+    &-dop{
+      margin-top: 48px !important;
+    }
+    &:hover {
+      background-color: #faeee9;
+    }
+  }
+}
+.title {
+  font-size: 64px;
+  line-height: 66px;
+  text-align: center;
+  @extend %kan-700;
+}
