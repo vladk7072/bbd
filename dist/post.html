@@ -22,6 +22,16 @@
             <img src="img/header/logo.svg" alt="">
           </a>
           <nav class="header__nav">
+            <div class="footer__input-box header__input">
+              <input class="footer__search" type="text" placeholder="Search">
+              <a class="footer__search-img" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929L18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                    fill="#646762" />
+                </svg>
+              </a>
+            </div>
             <ul>
               <li>
                 <a href="#">
@@ -58,11 +68,54 @@
                   Contact
                 </a>
               </li>
+              <button data-fancybox href="#popup-donate" class="header__top-button header__nav-button"
+                type="button">Donate</button>
             </ul>
           </nav>
-          <a class="header__top-link" href="#">
-            <img src="img/header/lang-icon.svg" alt="">
-          </a>
+          <div class="header__top-link">
+            <img class="header__lang-img" src="img/header/lang-icon.svg" alt="">
+
+            <div class="header__lang">
+              <div class="header__lang-wrapper">
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/run-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Run</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check">
+                    <img src="img/header/check-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/ger-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Deu</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/fra-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Fra</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/eng-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Eng</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="header__burger">
+            <div class="header__burger-wrapper">
+              <span></span>
+            </div>
+          </div>
           <button data-fancybox href="#popup-donate" class="header__top-button" type="button">Donate</button>
         </div>
       </div>
@@ -104,7 +157,7 @@
               <img class="post__bg-img" src="img/post/bg.jpg" alt="">
             </div>
             <div class="post__content">
-              <div></div>
+              <div class="post__content-empty"></div>
               <div class="post__inner">
                 <div class="post__box">
                   <p class="post__box-text">Ongoing Projects</p>
@@ -112,6 +165,19 @@
                 </div>
                 <div class="post__title">
                   Help fight against COVID-19 in Burundi
+                </div>
+                <div class="donate donate-mob">
+                  <div class="donate__wrapper">
+                    <a class="donate__btn" data-fancybox href="#popup-donate">Donate Now</a>
+                    <div class="donate__box">
+                      <div class="donate__link" href="#">
+                        <img src="img/post/paypal.svg" alt="">
+                      </div>
+                      <div class="donate__link" href="#">
+                        <img src="img/post/gofundme.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <p class="post__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -190,7 +256,7 @@
                   With us, you have the option of donating to specific projects, or you leave the decision to use your
                   donation to the board of the association
                 </p>
-                <a class="palets__link btn" href="#">
+                <a class="palets__link btn" data-fancybox href="#popup-donate">
                   Donate
                 </a>
               </div>
@@ -206,6 +272,11 @@
     <footer class="footer">
   <div class="container">
     <div class="footer__top">
+      <div class="footer__logo-box footer__logo-box-mob">
+        <a class="footer__logo" href="#">
+          <img src="img/footer/logo.svg" alt="">
+        </a>
+      </div>
       <nav class="footer__nav">
         <ul>
           <li>
@@ -231,12 +302,19 @@
           </li>
         </ul>
       </nav>
+
       <div class="footer__input-box">
         <input class="footer__search" type="text" placeholder="Search">
-        <a href="#">
-          <img src="img/footer/search-icon.svg" alt="">
+        <a class="footer__search-img" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929L18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+              fill="#646762" />
+          </svg>
+
         </a>
       </div>
+
     </div>
     <div class="footer__bottom">
       <div class="footer__logo-box">
@@ -247,29 +325,33 @@
       </div>
       <div class="footer__socials">
         <p class="footer__socials-text">Follow Us</p>
-        <a class="footer__socials-link" href="#">
-          <img class="footer__socials-img" src="img/footer/twitter.png" alt="">
-        </a>
-        <a class="footer__socials-link" href="#">
-          <img class="footer__socials-img" src="img/footer/facebook.png" alt="">
-        </a>
-        <a class="footer__socials-link" href="#">
-          <img class="footer__socials-img" src="img/footer/instagram.png" alt="">
-        </a>
-        <a class="footer__socials-link" href="#">
-          <img class="footer__socials-img" src="img/footer/youtube.png" alt="">
-        </a>
+        <div class="footer__socials-box">
+          <a class="footer__socials-link" href="#">
+            <img class="footer__socials-img" src="img/footer/twitter.png" alt="">
+          </a>
+          <a class="footer__socials-link" href="#">
+            <img class="footer__socials-img" src="img/footer/facebook.png" alt="">
+          </a>
+          <a class="footer__socials-link" href="#">
+            <img class="footer__socials-img" src="img/footer/instagram.png" alt="">
+          </a>
+          <a class="footer__socials-link" href="#">
+            <img class="footer__socials-img" src="img/footer/youtube.png" alt="">
+          </a>
+        </div>
       </div>
       <div class="footer__links-box">
         <a class="footer__link" href="#">Privacy policy</a>
         <a class="footer__link" href="#">Imprint</a>
       </div>
     </div>
+    <p class="footer__copy footer__copy-mob">© 2022 BDD e.V.</p>
   </div>
 </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="js/app.min.js"></script>
 </body>
 

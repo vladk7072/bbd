@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #fcfbf7;
   @extend %pro-400;
   color: $text;
   height: 100%;
@@ -20,6 +21,16 @@ main {
   margin: 0 auto;
   padding: 0 16px;
 }
+.container-808 {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.container-752 {
+  max-width: 784px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 .btn {
   display: inline-block;
   border: 2px solid #1eb53a;
@@ -37,7 +48,7 @@ main {
   &-sec {
     border: 2px solid #fb5607;
     color: $btn-sec;
-    &-dop{
+    &-dop {
       margin-top: 48px !important;
     }
     &:hover {
@@ -50,4 +61,7 @@ main {
   line-height: 66px;
   text-align: center;
   @extend %kan-700;
+}
+.fancybox__slide{
+  padding: 16px;
 }

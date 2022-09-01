@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+@@include('html/head.html',{
+"title": "Document"
+})
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Podcasts
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Live Streams
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  About Burundi
+                </a>
+              </li>
+              <li class="header__active">
+                <a href="#">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__top-link" href="#">
+            <img src="img/header/lang-icon.svg" alt="">
+          </a>
+          <button data-fancybox href="#popup-donate" class="header__top-button" type="button">Donate</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="popup-donate" id="popup-donate">
+        <div class="popup-donate__title">
+          Donation
+        </div>
+        <p class="popup-donate__text">
+          Please choose a service
+        </p>
+        <div class="popup-donate__items">
+          <div class="popup-donate__item">
+            <a class="popup-donate__link" href="#">
+              <img src="img/post/popup-paypal.svg" alt="">
+            </a>
+          </div>
+          <div class="popup-donate__item">
+            <a class="popup-donate__link" href="#">
+              <img src="img/post/popup-gofundme.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-send" id="popup-send">
+        <div class="popup-send__image">
+          <img src="img/contact/popup-icon.svg" alt="">
+        </div>
+        <div class="popup-send__title">
+          Success!
+        </div>
+        <p class="popup-send__text">
+          Your message has been sent.
+        </p>
+        <a class="popup-send__btn" href="#contact.htm">OK</a>
+      </div>
+
+      <section class="main-bg">
+        <h1 class="main-bg__title title">
+          Contact
+        </h1>
+      </section>
+
+      <section class="contact">
+        <div class="container-752">
+          <div class="contact__wrapper">
+            <p class="contact__text">
+              We look forward to every message, inquiry or feedback. You are also welcome to send us an email directly to <a class="contact__text-link" href="#">bdd-ev@hotmail.com</a>
+            </p>
+            <div class="contact__inner">
+              <div class="contact__inner-title">Contact form</div>
+              <form class="contact__form" action="#">
+                <div class="contact__inputs">
+                  <div class="contact__input-box">
+                    <div class="contact__input-title">
+                      First name (required)
+                    </div>
+                    <input class="contact__input" type="text" placeholder="Enter your First name">
+                  </div>
+                  <div class="contact__input-box">
+                    <div class="contact__input-title">
+                      Surname (required)
+                    </div>
+                    <input class="contact__input" type="text" placeholder="Enter your Surname">
+                  </div>
+                </div>
+                <div class="contact__input-box">
+                  <div class="contact__input-title">
+                    Your E-mail address (required)
+                  </div>
+                  <input class="contact__input" type="text" placeholder="Enter your E-mail address">
+                </div>
+                <div class="contact__input-box">
+                  <div class="contact__input-title">
+                    Reference
+                  </div>
+                  <input class="contact__input" type="text" placeholder="Enter your Reference">
+                </div>
+                <div class="contact__input-box">
+                  <div class="contact__input-title">
+                    Your message
+                  </div>
+                  <textarea class="contact__input contact__textarea" name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+
+                <div class="contact__label-inner">
+                  <label class="contact__label">
+                    <input class="contact__check-box" type="checkbox">
+                    <span class="contact__check-style"></span>
+                  </label>
+                  <div class="contact__label-text">
+                    You agree that your data will be used to process your request. Further information can be found in the <a class="contact__label-link" href="#">Privacy Policy</a> section.
+                  </div>
+                </div>
+
+
+                <button class="contact__send" type="submit" data-fancybox href="#popup-send">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="palets palets-about">
+        <div class="container">
+          <div class="palets__wrapper">
+            <div class="palets__item">
+              <div class="palets__image">
+                <img class="palets__img" src="img/palets/1.svg" alt="">
+              </div>
+              <div class="palets__box">
+                <h5 class="palets__title">
+                  Join Our Family
+                </h5>
+                <p class="palets__text">
+                  Feel free to write in our Membership Application Form to join our big and friendly family
+                </p>
+                <a class="palets__link btn btn-sec" href="#">
+                  Write In
+                </a>
+              </div>
+            </div>
+            <div class="palets__item palets__item-sec">
+              <div class="palets__image">
+                <img class="palets__img" src="img/palets/2.svg" alt="">
+              </div>
+              <div class="palets__box">
+                <h5 class="palets__title">
+                  Your Donation Helps!
+                </h5>
+                <p class="palets__text">
+                  With us, you have the option of donating to specific projects, or you leave the decision to use your
+                  donation to the board of the association
+                </p>
+                <a class="palets__link btn" data-fancybox href="#popup-donate">
+                  Donate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+    </main>
+
+    @@include('html/footer.html',{})
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

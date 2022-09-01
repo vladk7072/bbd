@@ -14,6 +14,16 @@
             <img src="img/header/logo.svg" alt="">
           </a>
           <nav class="header__nav">
+            <div class="footer__input-box header__input">
+              <input class="footer__search" type="text" placeholder="Search">
+              <a class="footer__search-img" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929L18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                    fill="#646762" />
+                </svg>
+              </a>
+            </div>
             <ul>
               <li>
                 <a href="#">
@@ -50,11 +60,54 @@
                   Contact
                 </a>
               </li>
+              <button data-fancybox href="#popup-donate" class="header__top-button header__nav-button"
+                type="button">Donate</button>
             </ul>
           </nav>
-          <a class="header__top-link" href="#">
-            <img src="img/header/lang-icon.svg" alt="">
-          </a>
+          <div class="header__top-link">
+            <img class="header__lang-img" src="img/header/lang-icon.svg" alt="">
+
+            <div class="header__lang">
+              <div class="header__lang-wrapper">
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/run-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Run</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check">
+                    <img src="img/header/check-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/ger-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Deu</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/fra-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Fra</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/eng-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Eng</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="header__burger">
+            <div class="header__burger-wrapper">
+              <span></span>
+            </div>
+          </div>
           <button data-fancybox href="#popup-donate" class="header__top-button" type="button">Donate</button>
         </div>
       </div>
@@ -84,7 +137,7 @@
 
       <section class="main-bg">
         <h1 class="main-bg__title title">
-          Future Events
+          Past Events & Galleries
         </h1>
       </section>
 
@@ -95,10 +148,24 @@
               <img class="post__bg-img" src="img/future/bg-2.jpg" alt="">
             </div>
             <div class="future__content">
-              <div></div>
+              <div class="post__content-empty"></div>
               <div class="future__inner">
                 <div class="post__title">
                   Name of the Event
+                </div>
+                <div class="future-aside future-aside-mob">
+                  <div class="future-aside__box">
+                    <img src="img/events/icon-date.svg" alt="">
+                    <p class="future-aside__text">
+                      Sat, June 18, 11:00 AM
+                    </p>
+                  </div>
+                  <div class="future-aside__box">
+                    <img src="img/events/icon-map.svg" alt="">
+                    <p class="future-aside__text">
+                      Solingen, Ketzberger Straße 67
+                    </p>
+                  </div>
                 </div>
                 <p class="post__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -140,8 +207,8 @@
             <div class="gallery__title-box">
 
               <div class="future__content">
-                <div></div>
-                <div class="future__inner">
+                <div class="post__content-empty"></div>
+                <div class="future__inner-gallery">
                   <h5 class="gallery__title">Gallery</h5>
                   <div class="gallery__subtitle">
                     <span>15</span> items
@@ -174,14 +241,14 @@
       </section>
 
       <div class="container">
-        <div class="future__content">
-          <div></div>
+        <div class="future__content future__content-pb72">
+          <div class="post__content-empty"></div>
           <div class="future__inner">
             <a class="post__btn btn btn-sec btn-sec-dop" href="">
               <img src="img/future/arrow.svg" alt="">
               Back to Projects</a>
           </div>
-          <div></div>
+          <div class="post__content-empty"></div>
         </div>
       </div>
 
@@ -216,7 +283,7 @@
                   With us, you have the option of donating to specific projects, or you leave the decision to use your
                   donation to the board of the association
                 </p>
-                <a class="palets__link btn" href="#">
+                <a class="palets__link btn" data-fancybox href="#popup-donate">
                   Donate
                 </a>
               </div>
@@ -232,6 +299,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="js/app.min.js"></script>
 </body>
 

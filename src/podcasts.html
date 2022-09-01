@@ -14,6 +14,16 @@
             <img src="img/header/logo.svg" alt="">
           </a>
           <nav class="header__nav">
+            <div class="footer__input-box header__input">
+              <input class="footer__search" type="text" placeholder="Search">
+              <a class="footer__search-img" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929L18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                    fill="#646762" />
+                </svg>
+              </a>
+            </div>
             <ul>
               <li>
                 <a href="#">
@@ -25,12 +35,12 @@
                   Projects
                 </a>
               </li>
-              <li>
+              <li class="header__active">
                 <a href="#">
                   Events
                 </a>
               </li>
-              <li class="header__active">
+              <li>
                 <a href="#">
                   Podcasts
                 </a>
@@ -50,11 +60,54 @@
                   Contact
                 </a>
               </li>
+              <button data-fancybox href="#popup-donate" class="header__top-button header__nav-button"
+                type="button">Donate</button>
             </ul>
           </nav>
-          <a class="header__top-link" href="#">
-            <img src="img/header/lang-icon.svg" alt="">
-          </a>
+          <div class="header__top-link">
+            <img class="header__lang-img" src="img/header/lang-icon.svg" alt="">
+
+            <div class="header__lang">
+              <div class="header__lang-wrapper">
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/run-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Run</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check">
+                    <img src="img/header/check-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/ger-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Deu</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/fra-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Fra</div>
+                </a>
+                <a class="header__lang-item" href="#">
+                  <div class="header__lang-check"></div>
+                  <div class="header__lang-flag">
+                    <img src="img/header/eng-flag.svg" alt="">
+                  </div>
+                  <div class="header__lang-country">Eng</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="header__burger">
+            <div class="header__burger-wrapper">
+              <span></span>
+            </div>
+          </div>
           <button data-fancybox href="#popup-donate" class="header__top-button" type="button">Donate</button>
         </div>
       </div>
@@ -194,16 +247,17 @@
         <div class="container">
           <div class="pagination__wrapper">
             <div class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">1</a>
+              <a class="pagination__link 
+              pagination__link-sec pagination__link-sec--active pagination__link--active" href="#">1</a>
             </div>
             <div class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link pagination__link-sec" href="#">2</a>
             </div>
             <div class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
+              <a class="pagination__link pagination__link-sec" href="#">3</a>
             </div>
             <div class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
+              <a class="pagination__link pagination__link-sec" href="#">4</a>
             </div>
           </div>
         </div>
@@ -240,7 +294,7 @@
                   With us, you have the option of donating to specific projects, or you leave the decision to use your
                   donation to the board of the association
                 </p>
-                <a class="palets__link btn" href="#">
+                <a class="palets__link btn" data-fancybox href="#popup-donate">
                   Donate
                 </a>
               </div>
@@ -257,6 +311,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="js/app.min.js"></script>
 </body>
 
