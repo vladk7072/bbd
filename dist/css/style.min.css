@@ -2204,6 +2204,7 @@ main {
     display: block;
     margin: 44px auto 0;
     width: 100%;
+    text-align: center;
   }
   .header__nav ul {
     margin: 0 16px;
