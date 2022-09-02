@@ -833,6 +833,7 @@ main {
   margin-right: 4px;
 }
 .footer__search {
+  height: 100%;
   width: 100%;
   background: #f2ffea;
   border-radius: 7px;
@@ -858,6 +859,9 @@ main {
   background-color: transparent;
   border-radius: 8px;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer__search-img svg {
   display: flex;
@@ -928,7 +932,6 @@ main {
 .main-bg {
   padding: 208px 0 126px;
   background-color: #f5f8e6;
-  background-image: url("../img/header/bg-decor.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -963,6 +966,10 @@ main {
 }
 .anchors__item--active a {
   background: #d2f0d8;
+}
+.anchors__box-empty {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .about {
@@ -1451,7 +1458,7 @@ main {
 
 .page404 {
   height: calc(100vh - 272px - 123px);
-  padding: 50px 0;
+  margin: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1484,7 +1491,7 @@ main {
 .contact__inputs {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   grid-gap: 24px;
 }
 .contact__text {
@@ -1727,9 +1734,11 @@ main {
     background-color: #dcf3ce;
     z-index: 50;
     transition: all 0.3s;
+    visibility: hidden;
   }
   .header__nav--active {
     transform: translateY(0);
+    visibility: visible;
   }
   .header__nav ul {
     flex-direction: column;
@@ -1761,6 +1770,9 @@ main {
 
   .footer__input-box {
     display: none;
+  }
+  .footer__input-box-search {
+    display: flex;
   }
 
   .palets__item {
@@ -1860,7 +1872,7 @@ main {
   }
 
   .palets {
-    padding: 64px 0;
+    padding: 75px 0;
   }
   .palets__wrapper {
     grid-template-columns: 1fr;
@@ -2052,6 +2064,32 @@ main {
   .gallery__items {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .stream-media__past {
+    margin-top: -64px;
+  }
+  .stream-media__data {
+    flex-direction: column;
+    align-items: start;
+  }
+  .stream-media__teg {
+    margin-left: 0;
+  }
+  .stream-media__box {
+    margin: 38px 0 24px;
+  }
+
+  .contact__inner {
+    padding: 48px 16px 56px;
+  }
+
+  .donation__wrapper {
+    margin: 65px auto;
+  }
+
+  .search__inner {
+    padding: 16px 18px;
+  }
 }
 @media (max-width: 520px) {
   .title {
@@ -2178,5 +2216,22 @@ main {
     font-size: 34px;
     line-height: 38px;
     margin-bottom: 16px;
+  }
+
+  .contact__inputs {
+    flex-direction: column;
+    grid-gap: 0;
+  }
+  .contact__send {
+    width: 100%;
+    justify-content: center;
+    margin-top: 54px;
+  }
+
+  .donate__wrapper {
+    max-width: 100%;
+  }
+  .donate__box {
+    justify-content: center;
   }
 }

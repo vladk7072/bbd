@@ -9,6 +9,10 @@ $(window).on("scroll", () => {
     windowScrollPosition2 = $(window).scrollTop();
   var blockPosition3 = $("#statute").offset().top,
     windowScrollPosition3 = $(window).scrollTop();
+  var blockPosition4 = $("#about").offset().top,
+    windowScrollPosition4 = $(window).scrollTop();
+  var blockPosition5 = $("#links").offset().top,
+    windowScrollPosition5 = $(window).scrollTop();
   if (blockPosition1 < windowScrollPosition1) {
     $(".anchors__item").removeClass("anchors__item--active");
     $(".anchors__item-1").addClass("anchors__item--active");
@@ -20,6 +24,14 @@ $(window).on("scroll", () => {
   if (blockPosition3 < windowScrollPosition3) {
     $(".anchors__item").removeClass("anchors__item--active");
     $(".anchors__item-3").addClass("anchors__item--active");
+  }
+  if (blockPosition4 < windowScrollPosition4) {
+    $(".anchors__item").removeClass("anchors__item--active");
+    $(".anchors__item-4").addClass("anchors__item--active");
+  }
+  if (blockPosition5 < windowScrollPosition5) {
+    $(".anchors__item").removeClass("anchors__item--active");
+    $(".anchors__item-5").addClass("anchors__item--active");
   }
 });
 
@@ -55,4 +67,3 @@ $(".cookie").click(function () {
   }
   setTimeout(timerCookie, 600000);
 });
-

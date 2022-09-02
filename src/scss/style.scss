@@ -321,8 +321,8 @@
     width: 100%;
     height: 208px;
   }
-  &__link{
-    &-mob{
+  &__link {
+    &-mob {
       display: none;
     }
   }
@@ -725,6 +725,7 @@
     }
   }
   &__search {
+    height: 100%;
     width: 100%;
     background: #f2ffea;
     border-radius: 7px;
@@ -749,6 +750,9 @@
       background-color: transparent;
       border-radius: 8px;
       transition: all 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       svg {
         display: flex;
         justify-content: center;
@@ -776,7 +780,7 @@
   }
   &__logo {
     &-box {
-      &-mob{
+      &-mob {
         display: none;
       }
       display: flex;
@@ -792,7 +796,7 @@
     line-height: 21px;
     color: #646762;
     margin-left: 18px;
-    &-mob{
+    &-mob {
       display: none;
     }
   }
@@ -808,7 +812,7 @@
         margin-left: 20px;
       }
     }
-    &-box{
+    &-box {
       display: flex;
     }
   }
@@ -829,7 +833,6 @@
 .main-bg {
   padding: 208px 0 126px;
   background-color: #f5f8e6;
-  background-image: url("../img/header/bg-decor.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -866,6 +869,12 @@
       a {
         background: #d2f0d8;
       }
+    }
+  }
+  &__box {
+    &-empty {
+      visibility: hidden;
+      opacity: 0;
     }
   }
 }
@@ -1085,8 +1094,8 @@
       border-radius: 6px;
     }
   }
-  &__bg{
-    &-img{
+  &__bg {
+    &-img {
       border-radius: 8px;
       height: 208px;
       object-fit: cover;
@@ -1116,7 +1125,7 @@
 }
 .donate {
   margin-top: 178px;
-  &-mob{
+  &-mob {
     display: none;
   }
   &__wrapper {
@@ -1248,7 +1257,7 @@
   .post__title {
     margin-top: 32px;
   }
-  &__inner-gallery{
+  &__inner-gallery {
     display: flex;
     align-items: flex-end;
   }
@@ -1262,13 +1271,13 @@
         400px
       );
     grid-gap: 24px;
-    &-pb72{
+    &-pb72 {
       padding-bottom: 72px;
     }
   }
   &-aside {
     margin-top: 87px;
-    &-mob{
+    &-mob {
       display: none;
     }
     &__box {
@@ -1385,7 +1394,7 @@
 }
 .page404 {
   height: calc(100vh - 272px - 123px);
-  padding: 50px 0;
+  margin: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1418,7 +1427,7 @@
   &__inputs {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     grid-gap: 24px;
   }
   &__text {
